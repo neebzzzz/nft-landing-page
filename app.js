@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
         onboarding.startOnboarding();
       };
     } else if (accounts && accounts.length > 0) {
-      onboardButton.innerText = `✔ ...${accounts[0].slice(0)}`;
+      onboardButton.innerText = `✔ ...${accounts[0]}`;
       onboardButton.disabled = true;
       onboarding.stopOnboarding();
     } else {
